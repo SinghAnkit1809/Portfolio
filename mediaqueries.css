@@ -14,8 +14,24 @@
     }
     #hamburger-nav {
         display: flex;
+        background-color: #f5f5dc;
     }
-
+    .menu-links {
+        background-color: #d2b48c; /* Tan */
+        border-radius: 1rem;
+        text-align: center;
+    }
+    .menu-links a {
+        color: #4b3f2f; /* Dark Brown */
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .menu-links a:hover {
+        background-color: #4b3f2f; /* Dark Brown */
+        color: #f5f5dc; /* Beige */
+    }
     #experience, .experience-details-conatiner {
         margin-top: 2rem;
     }
@@ -47,7 +63,7 @@
     }
 }
 
-@media screen and (max-width: 600) {
+ @media screen and (max-width: 600) {
     #contact, footer {
         height: 40vh;
     }
@@ -58,11 +74,18 @@
     article {
         font-size: 1rem;
     }
-    footer nav {
+    /* footer nav {
         height: fit-content;
         margin-bottom: 2rem;
         align-items: center;
         justify-content: center;
+    }  */
+    footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem;
     }
 
     .about-container, .contact-info-upper-container, .btn-container {
@@ -116,4 +139,18 @@
     justify-content: center;
     width: 100%;
   }
+
+  @media screen and (max-width: 600px) {
+    #certificates {
+        margin: 0 1rem;
+    }
+    
+    .certificate {
+        padding: 0.5rem 1rem; /* Reduced padding */
+    }
+    
+    .certificate-link {
+        margin-left: 0.5rem; /* Reduced margin */
+    }
+}
   

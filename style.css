@@ -6,8 +6,13 @@
     padding: 0;
 }
 
-body {
+/* body {
     font-family: 'Poppins', sans-serif;
+} */
+body {
+    background-color: #f5f5dc; /* Beige */
+    color: #4b3f2f; /* Dark Brown */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -42,7 +47,8 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
-}
+    color: #f5f5dc;
+} 
 
 a {
     color: black;
@@ -59,6 +65,7 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    color: #4b3f2f;
 }
 .logo:hover {
     cursor: default;
@@ -148,8 +155,12 @@ section {
     min-height: fit-content;
 }
 
+/* .section-container {
+    display: flex;
+} */
 .section-container {
     display: flex;
+    background-color: #f5f5dc; /* Beige */
 }
 
 /*profile */
@@ -168,9 +179,14 @@ section {
     margin: auto 0;
 }
 
+/* .section__text {
+    align-self: center;
+    text-align: center;
+} */
 .section__text {
     align-self: center;
     text-align: center;
+    color: #4b3f2f; /* Dark Brown */
 }
 
 .section__text p {
@@ -189,6 +205,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    color: #4b3f2f;
 }
 
 #socials-container {
@@ -278,7 +295,7 @@ section {
     bottom: 2.5rem;
 }
 
-.details_container {
+/* .details_container {
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -286,6 +303,14 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
+} */
+.details_container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: #d2b48c; /* Tan */
+    color: #4b3f2f; /* Dark Brown */
+    border: 1px solid #4b3f2f; /* Dark Brown */
+    border-radius: 2rem;
 }
 
 .section-container {
@@ -341,30 +366,53 @@ article .icon {
 
 /* Projects Section */
 
+/* #projects {
+    position: relative;
+} */
 #projects {
     position: relative;
+    background-color: #f5f5dc; /* Beige */
 }
 
-.color-container{
+/* .color-container{
     border-color: rgb(163,163,163);
     background: rgb(250,250,250);
+} */
+.color-container {
+    border-color: #4b3f2f; /* Dark Brown */
+    background: #d2b48c; /* Tan */
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    color: #4b3f2f; /* Dark Brown text */
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    min-height: 150px;
+    margin: 1rem;
 }
+
+/* .project-title {
+    margin: 1rem;
+    color: black;
+} */
+
+/* .project-btn {
+    color: black;
+    border-color: rgb(163,163,163);
+} */
 
 .project-title {
     margin: 1rem;
-    color: black;
+    color: #4b3f2f; /* Dark Brown */
 }
 
 .project-btn {
-    color: black;
-    border-color: rgb(163,163,163);
+    color: #f5f5dc; /* Beige */
+    background-color: #4b3f2f; /* Dark Brown */
+    border-color: #4b3f2f; /* Dark Brown */
 }
+
 .experience-detail-container .about-container{
     display: grid;
     /*gap: 2rem;
@@ -380,20 +428,28 @@ article .icon {
 
 /* Contact Section */
 
+/* #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+} */
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    background-color: #f5f5dc; /* Beige */
+    color: #4b3f2f; /* Dark Brown */
 }
 
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+    border: 1px solid #4b3f2f;
+    color: #4b3f2f;
+    background-color: #d2b48c;
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -431,3 +487,70 @@ footer p {
     text-align: center;
 }
 
+/* Certificates Section */
+/* Certificates Section */
+#certificates {
+    padding-top: 4vh;
+    position: relative;
+    height: fit-content;
+    margin: 0 2rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: #f5f5dc; /* Beige */
+}
+
+.certificates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.5rem;
+    flex: 1;
+    background-color: #d2b48c; /* Tan */
+    border: 1px solid #4b3f2f; /* Dark Brown */
+    border-radius: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.certificate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d2b48c; /* Tan */
+    padding: 0.5rem 2rem;
+  
+
+}
+
+.certificate-info {
+    flex: 1;
+    min-width: 70%;
+}
+
+.certificate-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+}
+
+.certificate-details {
+    font-size: 0.9rem;
+}
+
+.certificate-link {
+    padding: 0.5rem 1rem;
+    background-color: #4b3f2f;
+    color: #f5f5dc;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+    margin-left: 2rem;
+    flex-shrink: 0; /* Prevents button from shrinking */
+    margin-left: 1.5rem;
+}
+
+.certificate-link:hover {
+    background-color: #3a2f24;
+    color: #ffffff;
+}
