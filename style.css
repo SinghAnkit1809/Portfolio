@@ -546,7 +546,7 @@ footer p {
     transition: all 300ms ease;
     font-size: 0.9rem;
     margin-left: 2rem;
-    flex-shrink: 0; /* Prevents button from shrinking */
+    /* Prevents button from shrinking */
     margin-left: 1.5rem;
 }
 
